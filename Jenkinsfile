@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     def course="ks8"
-                    println("print the condition $(course) course")
+                    println("print the condition ${course} course")
                 }
             }
         }
