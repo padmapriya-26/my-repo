@@ -1,6 +1,6 @@
 pipeline{
     agent {
-        label 'headache-label'
+        label 'headche-label'
     }
     stages {
         stage('build') {
