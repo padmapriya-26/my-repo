@@ -9,7 +9,7 @@ pipeline {
         stage('Groovy stage') {
             steps {
                 script {
-                    def course='ks8'
+                    def course="ks8"
                     println("print the condition $(course) course")
                 }
             }
