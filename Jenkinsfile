@@ -1,11 +1,17 @@
-pipeline{
-    agent {
-        label 'headche-label'
-    }
+pipeline {
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo "writing the pipeline"
+                echo "building step"
+            }
+        }
+        stage('Groovy stage') {
+            steps {
+                script {
+                    def course='ks8'
+                    println("print the condition $(course) course")
+                }
             }
         }
     }
